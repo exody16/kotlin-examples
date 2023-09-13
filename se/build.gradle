@@ -1,0 +1,10 @@
+apply plugin: 'kotlin'
+
+
+repositories {
+    mavenCentral()
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_17
+}

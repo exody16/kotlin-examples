@@ -1,0 +1,25 @@
+import org.gradle.api.JavaVersion
+
+plugins {
+    id 'org.springframework.boot' version '3.0.6'
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'org.jetbrains.kotlin.plugin.spring'
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation 'org.springframework:spring-core:6.0.8'
+
+    implementation 'org.springframework.boot:spring-boot-starter-webflux:3.0.7'
+
+}
+
+
+compileKotlin {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_17
+}

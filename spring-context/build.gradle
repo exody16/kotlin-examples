@@ -1,0 +1,32 @@
+import org.gradle.api.JavaVersion
+
+plugins {
+    id 'org.springframework.boot' version '3.0.6'
+}
+
+apply plugin: 'kotlin'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'org.jetbrains.kotlin.plugin.spring'
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+//    implementation("org.springframework.boot:spring-boot:3.0.8")
+//    implementation("org.springframework.boot:spring-boot-autoconfigure:3.0.8")
+    implementation("org.springframework.boot:spring-boot-starter-web:3.0.8")
+
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.0.8")
+}
+
+
+compileKotlin {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_17
+}
+
+// Is needed to run tests
+test {
+    useJUnitPlatform()
+}
