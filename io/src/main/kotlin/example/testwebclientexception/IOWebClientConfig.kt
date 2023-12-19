@@ -12,7 +12,7 @@ import reactor.netty.http.client.HttpClient
     fun ioWebClient(): WebClient {
         return WebClient.builder()
 //            .baseUrl("www.example.com")
-            .baseUrl("http://feature13.avelon.team:8085/lapi/v1/no-auth/beetles/sync")
+            .baseUrl("http://localhost:8085")
             .clientConnector(ReactorClientHttpConnector(HttpClient.create().wiretap(true)))
             .filter(handleError())
             .build()

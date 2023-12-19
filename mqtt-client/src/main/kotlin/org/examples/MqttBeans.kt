@@ -21,7 +21,7 @@ import org.springframework.messaging.MessageHandler
 class MqttBeans(
     private val mqttMessageHandler: MqttMessageHandler
 ) {
-    @Value("\${avelon.mqtt.internal-mosquitto-uri:tcp://localhost:1883}")
+    @Value("\${mosquitto-uri:tcp://localhost:1883}")
     private lateinit var mosquittoBroker: String
 
     @Bean
