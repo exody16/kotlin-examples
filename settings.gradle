@@ -5,4 +5,5 @@ include 'se'
 include 'io'
 include 'spring-context'
 include 'spring-context'
+include 'kotlin-play'
 
