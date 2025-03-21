@@ -1,4 +1,4 @@
-package org.examples
+package org.examples.all
 
 import kotlin.properties.Delegates
 
@@ -39,10 +39,10 @@ fun add(a: Int): Int {
 }
 
 class Inite {
-    var x = 5;
+    var x = 5
 
     init {
-        x = 6;
+        x = 6
     }
 
     companion object {

@@ -16,6 +16,8 @@ dependencies {
     implementation 'org.springframework:spring-core:6.0.8'
 
     implementation 'org.springframework.boot:spring-boot-starter-webflux:3.0.7'
+    implementation 'io.github.oshai:kotlin-logging-jvm:7.0.3'
+
 
 }
 

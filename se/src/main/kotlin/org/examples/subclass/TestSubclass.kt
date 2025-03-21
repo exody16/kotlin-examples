@@ -1,7 +1,5 @@
 package org.examples.subclass
 
-import org.examples.ParentAbstractClass
-
 open class ParentClass {
 
     private val privateField: Int = 1
@@ -21,14 +19,7 @@ class TestSubclass: ParentClass() {
 
 }
 
-class TestSubclassJava: ParentAbstractClass() {
-
-    fun subProtected() {
-        javaProtectedParent();
-    }
-
-}
 
 fun main() {
-    TestSubclass().subProtected();
+    TestSubclass().subProtected()
 }
